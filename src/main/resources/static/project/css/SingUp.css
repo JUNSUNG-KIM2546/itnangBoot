@@ -1,0 +1,68 @@
+/* 회원가입 */
+.login-wrapper{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #eeddff;
+    margin-bottom: 20px;
+    text-shadow:2px 2px 2px #000;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+.idc{
+	
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+}
+.idc input[type="text"]{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+.idc button[type="button"]{
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#login-form > input::placeholder{
+    color: #807e7e;
+}
+#login-form > input[type="submit"]{
+    text-shadow:2px 2px 2px #000;
+    color: #ddffff;
+    font-size: 16px;
+    background-color: #eeddff;
+    margin-top: 20px;
+}
+#login-form > input[type="checkbox"]{
+    color: #000;
+    display: none;
+}
+
+

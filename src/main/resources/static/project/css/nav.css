@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');   /* 메뉴 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');   /* 헤더 타이틀 h1 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&display=swap');   /* 헤더 타이틀 p 폰트 */
+
+/* 네비 */
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+.nav .logo img{
+    width: 200px;
+}
+.nav .nav_but a{
+    font-family:  'Jua', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+.nav .nav2_but a{
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+
+
+/* 헤더 */
+.header{
+    margin: 0 auto;
+    background-position: center;                            /* 배경 위치 중앙 설정  opacity: 0.7 흐림효과 */
+    background-size: cover;                                 /* 배경 크기: 이미지 꽉차게 설정 */
+    height: 800px;                                          /* 헤더 높이 700px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 0.5s ease;
+}
+.header .title{
+    text-align: center;
+}
+.header .title img{
+    width: 100px;
+}
+.header .title h1{
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 0.2em;                              /* 글자 간격 조정 */
+    margin-bottom: 0;                                   /* h1 아래쪽 마진을 0으로 해줌(기본적으로 h1은 마진을 가지고 있으므로 필요시 조절) */
+}
+.header .title p{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: black;
+}
+.header .title button{
+    padding: 10px;
+    background: black;
+    color: white;
+    border: 2px solid white;                          /* 테두리를 정의 // border: 두께 형태 색상 */
+    border-radius: 5px;                                 /* 테두리를 둥글게 */
+    font-size: 14px;
+    transition: .5s ease;
+}
+.header .title button:hover{
+    transition: .5s ease;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+}
+
+
+/* 인트로 */
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.intro .card{
+    flex: 1;                                            /* 1:1:1 로 맞춤 */
+    text-align: center;
+    margin: 150px 40px;
+}
+.intro .card img{
+    margin-bottom: auto;
+}
+.intro .card h1{
+    letter-spacing: 0.2em;
+}
+.intro .card p{
+    font-size: 12px;
+}
+
+
+/* 풋터 */
+footer{
+    color: white;
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+footer .container .left{
+    flex: 1;
+}
+footer .container .left h1{
+    font-family: 'Jua', sans-serif;
+    margin: 0;
+}
+footer .container .left p{
+    margin: 0;
+    font-size: 10px;
+}
+footer .container .left .sns{
+    margin-top: 30px;
+}
+footer .container .left .sns a{
+    font-size: 24px;
+    margin-right: 20px;
+}
+footer .container .right{
+    flex: 3;
+    padding-left: 50px;
+}
+footer .container .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .right .list{
+    flex: 1;
+    margin-left: 20px;
+}
+footer .container .right .list h2{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+footer .container .right .list ul{
+    list-style: none;
+    padding: 0;
+}
+.footer .container .right .list ul li{
+    padding: 5px 5px;
+}
+.footer .container .right .list ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+footer .container .right .list ul li:hover{
+    background: #222;
+}
+footer .copy_right{
+    text-align: center;
+}
+footer .copy_right p{
+    font-size: 10px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+

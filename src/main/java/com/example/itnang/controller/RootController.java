@@ -1,16 +1,19 @@
-package com.example.itnang;
+package com.example.itnang.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
+@Controller
 @RequestMapping("/")
 public class RootController {
 
+    final String home = "home/";
+
     @GetMapping
     public String root() {
-        return "index.html";
+        return home + "index.html";
     }
 }
