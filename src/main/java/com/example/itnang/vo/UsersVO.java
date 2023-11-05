@@ -34,7 +34,7 @@ public class UsersVO {
         usersVO.setEMAIL(usersEntity.getEMAIL());
         usersVO.setPHONE(usersEntity.getPHONE());
         usersVO.setSBSCRBDE(usersEntity.getSBSCRBDE());
-        //userVO.setADMIN(usersEntity.getADMIN());
+        usersVO.setADMIN('n');
 
         return usersVO;
     }

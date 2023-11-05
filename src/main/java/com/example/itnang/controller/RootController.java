@@ -16,4 +16,9 @@ public class RootController {
     public String root() {
         return home + "index.html";
     }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return home + "hello.html";
+    }
 }

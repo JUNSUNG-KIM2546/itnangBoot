@@ -49,7 +49,7 @@ public class UsersEntity {
         usersEntity.setEMAIL(usersVO.getEMAIL());
         usersEntity.setPHONE(usersVO.getPHONE());
         usersEntity.setSBSCRBDE(usersVO.getSBSCRBDE());
-        //userEntity.setBoardLast(usersVO.getBoardLast());
+        usersEntity.setADMIN('n');
         return usersEntity;
     }
 

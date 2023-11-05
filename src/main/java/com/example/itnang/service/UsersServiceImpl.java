@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-@RequiredArgsConstructor
 public class UsersServiceImpl {
 	
-	private final UsersDao usersdao;
+	@Autowired
+	UsersDao usersdao;
 
 
 	public void signUp(UsersVO uservo) {
