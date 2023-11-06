@@ -33,7 +33,7 @@ public class UsersVO {
         usersVO.setNAME(usersEntity.getNAME());
         usersVO.setEMAIL(usersEntity.getEMAIL());
         usersVO.setPHONE(usersEntity.getPHONE());
-        usersVO.setSBSCRBDE(usersEntity.getSBSCRBDE());
+        usersVO.setSBSCRBDE(new Date());
         usersVO.setADMIN('n');
 
         return usersVO;

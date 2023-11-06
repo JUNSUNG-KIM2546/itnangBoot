@@ -48,7 +48,7 @@ public class UsersEntity {
         usersEntity.setNAME(usersVO.getNAME());
         usersEntity.setEMAIL(usersVO.getEMAIL());
         usersEntity.setPHONE(usersVO.getPHONE());
-        usersEntity.setSBSCRBDE(usersVO.getSBSCRBDE());
+        usersEntity.setSBSCRBDE(new Date());
         usersEntity.setADMIN('n');
         return usersEntity;
     }
