@@ -34,6 +34,6 @@ public class UsersController {
     @PostMapping("/signup")
     public String signUp(UsersVO uservo) {
         usersServiceImpl.signUp(uservo);
-        return home + "hello.html";
+        return "redirect:/hello";
     }
 }
