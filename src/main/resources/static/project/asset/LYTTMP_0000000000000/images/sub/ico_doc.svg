@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="31" y="25.205" width="38" height="49.59"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M64.202,26.204H41.688l-9.688,9.688v34.104c0,2.099,1.701,3.8,3.8,3.8h28.403
+		c2.098,0,3.799-1.701,3.8-3.8V30.004C68.002,27.905,66.301,26.204,64.202,26.204"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" x1="68.001" y1="47.332" x2="68.001" y2="42.668"/>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" d="M68.001,40.001v-9.998
+		c0-0.524-0.105-1.024-0.299-1.478c-0.192-0.456-0.471-0.865-0.813-1.209c-0.346-0.344-0.754-0.621-1.209-0.813
+		c-0.454-0.192-0.954-0.3-1.479-0.299h-5.629h-5.628h-5.629h-5.629l-2.422,2.423l-2.422,2.422l-2.422,2.422l-2.423,2.422v8.525
+		v8.526L32,61.47l-0.001,8.526c0,0.523,0.106,1.024,0.299,1.479c0.192,0.455,0.471,0.864,0.814,1.208
+		c0.343,0.343,0.753,0.621,1.208,0.813c0.454,0.193,0.954,0.3,1.479,0.3h7.101L50,73.794h7.102h7.1c0.525,0,1.025-0.104,1.479-0.298
+		c0.455-0.192,0.864-0.471,1.208-0.813c0.343-0.344,0.621-0.753,0.813-1.208c0.192-0.454,0.299-0.955,0.299-1.479v-9.998V50"/>
+	<polyline clip-path="url(#SVGID_2_)" fill="#FFFFFF" points="43.019,29.623 43.019,36.749 35.894,36.749 	"/>
+	<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" points="
+		43.019,29.623 43.019,36.749 35.894,36.749 	"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" x1="39.884" y1="44.633" x2="60.117" y2="44.633"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" x1="39.884" y1="51.567" x2="60.117" y2="51.567"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#212121" stroke-width="2" stroke-linejoin="round" x1="39.884" y1="58.501" x2="55.278" y2="58.501"/>
+</g>
+</svg>
