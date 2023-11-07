@@ -21,4 +21,5 @@ public class RootController {
     public String hello() {
         return home + "hello.html";
     }
+
 }

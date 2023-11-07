@@ -1,22 +1,19 @@
 package com.example.itnang.controller;
 
-import com.example.itnang.dao.UsersDao;
-import com.example.itnang.service.UsersServiceImpl;
-import com.example.itnang.vo.UsersVO;
-import lombok.RequiredArgsConstructor;
+import com.example.itnang.service.LoginServiceImpl;
+import com.example.itnang.vo.LoginVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 
-public class UsersController {
+public class LoginController {
 
     // 생성자 주입
     @Autowired
-    UsersServiceImpl usersServiceImpl;
+    LoginServiceImpl loginServiceImpl;
 
     final String home = "home/";
 
@@ -32,8 +29,8 @@ public class UsersController {
         return home +"signUp.html";
     }
     @PostMapping("/signup")
-    public String signUp(UsersVO uservo) {
-        usersServiceImpl.signUp(uservo);
+    public String signUp(LoginVO uservo) {
+        loginServiceImpl.signUp(uservo);
         return "redirect:/hello";
     }
 }

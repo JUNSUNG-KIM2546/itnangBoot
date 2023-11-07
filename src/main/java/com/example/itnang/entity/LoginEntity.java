@@ -1,6 +1,6 @@
 package com.example.itnang.entity;
 
-import com.example.itnang.vo.UsersVO;
+import com.example.itnang.vo.LoginVO;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +11,7 @@ import java.util.Date;
 @Setter
 @Getter
 @Table(name = "users")
-public class UsersEntity {
+public class LoginEntity {
     // jpa ==> database를 객체처럼 사용 가능
 
     @Id
@@ -39,18 +39,18 @@ public class UsersEntity {
     @Column
     private char ADMIN;
 
-    public static UsersEntity toUsersEntity(UsersVO usersVO) {
-        UsersEntity usersEntity = new UsersEntity();
+    public static LoginEntity toUsersEntity(LoginVO loginVO) {
+        LoginEntity loginEntity = new LoginEntity();
 
-        usersEntity.setNO(usersVO.getNO());
-        usersEntity.setID(usersVO.getID());
-        usersEntity.setPASS(usersVO.getPASS());
-        usersEntity.setNAME(usersVO.getNAME());
-        usersEntity.setEMAIL(usersVO.getEMAIL());
-        usersEntity.setPHONE(usersVO.getPHONE());
-        usersEntity.setSBSCRBDE(new Date());
-        usersEntity.setADMIN('n');
-        return usersEntity;
+        loginEntity.setNO(loginVO.getNO());
+        loginEntity.setID(loginVO.getID());
+        loginEntity.setPASS(loginVO.getPASS());
+        loginEntity.setNAME(loginVO.getNAME());
+        loginEntity.setEMAIL(loginVO.getEMAIL());
+        loginEntity.setPHONE(loginVO.getPHONE());
+        loginEntity.setSBSCRBDE(new Date());
+        loginEntity.setADMIN('n');
+        return loginEntity;
     }
 
 }
