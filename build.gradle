@@ -25,6 +25,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.1'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.3' // MariaDB 적절한 버전 사용
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'	// Spring Boot Starter Data JPA 의존성(jpa로 데이터베이스 연결)
 	compileOnly 'org.projectlombok:lombok'
@@ -32,6 +33,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.3.1'
+
 }
 
 tasks.named('test') {

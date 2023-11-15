@@ -14,7 +14,7 @@ public class RootController {
 
     @GetMapping
     public String root() {
-        return home + "index.html";
+        return "index";
     }
 
     @GetMapping("/hello")

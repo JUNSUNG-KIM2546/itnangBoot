@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>있냥?!</title>
+    <!-- https://fonts.google.com/?subset=korean&noto.script=Kore  폰트 스타일 -->
+    <style>
+
+    </style>
+</head>
+<!--제이쿼리-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- 카카오 지도API -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a2934dc1e36b528c374fc8c1f2fa06ca"></script>
+
+<link rel="shortcut icon" href="/project/image/favicon/favicon.ico">
+<link rel="stylesheet" href="/project/css/nav.css">
+<link rel="stylesheet" href="/project/css/SingUp.css">
+<link rel="stylesheet" href="/project/css/Login.css">
+
+
+<header>
+    <div data-include1="header" id="header"></div><!--헤더 인클루드-->
+</header>
+
+<body>
+    <section class="header" style="opacity: 0.7;">
+        <div class="title">
+            <h1>주인님의 멋진 모습을 자랑하기</h1>
+            <p>집사와 주인님의 추억을 여러 사람들에게 공유해보세요.</p>
+            <button><a href="/Boast" style="color: white;">자랑하기!</a></button>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="card">
+            <img src="/project/image/ghnimg/광고로고.png" alt="">
+            <h1>광고 문의</h1>
+            <p>주소 : 대전광역시 동구 우암로 352 - 21 비전관 729호</p>
+            <p>E-Mail : junsung2546@naver.com</p>
+            <p>Tell : 010 - 4053 - 2546</p>
+        </div>
+        <div class="card">
+            <img src="/project/image/ghnimg/협찬로고.png" alt="">
+            <h1>협찬 문의</h1>
+            <p>주소 : 대전광역시 동구 우암로 352 - 21 비전관 729호</p>
+            <p>E-Mail : junsung2546@naver.com</p>
+            <p>Tell : 010 - 4053 - 2546</p>
+        </div>
+        <div class="card">
+            <img src="/project/image/ghnimg/나눔로고.png" alt="">
+            <h1>나눔 문의</h1>
+            <p>주소 : 대전광역시 동구 우암로 352 - 21 비전관 729호</p>
+            <p>E-Mail : junsung2546@naver.com</p>
+            <p>Tell : 010 - 4053 - 2546</p>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div data-include2="footer" id="footer" class="clearfix"></div><!--푸터 인클루드-->
+</footer>
+
+<script>
+    $(function(){
+        var includes1 = $('[data-include1="header"]');
+        var includes2 = $('[data-include2="footer"]');
+        jQuery.each(includes1, function(){
+            $(this).load('home/header.html');
+        });
+        jQuery.each(includes2, function(){
+            $(this).load('home/footer.html');
+        });
+    });
+</script>
+
+<script>
+    // 슬라이드쇼용 JavaScript 코드
+    var images = ['/project/image/nang/s1.jpg', '/project/image/nang/s2.jpg', '/project/image/nang/s3.jpg', '/project/image/nang/s4.jpg', '/project/image/nang/s5.jpg', '/project/image/nang/s6.jpg', '/project/image/nang/s7.png'];
+    var currentIndex = 0;
+    var header = document.querySelector('.header');
+
+    function changeBackground() {
+        header.style.backgroundImage = 'url("' + images[currentIndex] + '")';
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // 3초마다 배경 변경
+    changeBackground(); // 초기 이미지 설정
+    setInterval(changeBackground, 3000);
+</script>
+
+<!-- 카카오 지도API -->
+<script>
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(36.350765457557735, 127.45304248848758), //지도의 중심좌표.
+        level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+</script>
+
+</html>
